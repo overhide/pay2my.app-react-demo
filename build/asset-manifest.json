@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/css/main.de2b9910.chunk.css",
+    "main.js": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/main.2d7a26c8.chunk.js",
+    "main.js.map": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/main.2d7a26c8.chunk.js.map",
+    "runtime-main.js": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/runtime-main.ca14829c.js",
+    "runtime-main.js.map": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/runtime-main.ca14829c.js.map",
+    "static/js/2.0c8af0a8.chunk.js": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/2.0c8af0a8.chunk.js",
+    "static/js/2.0c8af0a8.chunk.js.map": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/2.0c8af0a8.chunk.js.map",
+    "static/js/3.4eab09a4.chunk.js": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/3.4eab09a4.chunk.js",
+    "static/js/3.4eab09a4.chunk.js.map": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/3.4eab09a4.chunk.js.map",
+    "index.html": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/index.html",
+    "static/css/main.de2b9910.chunk.css.map": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/css/main.de2b9910.chunk.css.map",
+    "static/js/2.0c8af0a8.chunk.js.LICENSE.txt": "https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/static/js/2.0c8af0a8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca14829c.js",
+    "static/js/2.0c8af0a8.chunk.js",
+    "static/css/main.de2b9910.chunk.css",
+    "static/js/main.2d7a26c8.chunk.js"
+  ]
+}
