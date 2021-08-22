@@ -1,12 +1,12 @@
 import React, { useRef, useEffect } from "react";
 
-import { IPay2MyAppHub, IPay2MyAppLogin } from "pay2myapp-widgets";
+import { IPay2MyAppHub, IPay2MyAppLogin } from "pay2my.app";
 
-type OverhideLoginProps = {
+type Pay2MyAppLoginProps = {
   hub?: IPay2MyAppHub | null;
 };
 
-const OverhideLoginComponent: React.FunctionComponent<OverhideLoginProps>  = (props) => {
+const Pay2MyAppLoginComponent: React.FunctionComponent<Pay2MyAppLoginProps>  = (props) => {
   const componentRef = useRef();
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const OverhideLoginComponent: React.FunctionComponent<OverhideLoginProps>  = (pr
   );
 }
 
-export default OverhideLoginComponent;
+export default Pay2MyAppLoginComponent;

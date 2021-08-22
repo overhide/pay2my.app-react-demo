@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 
-import { IPay2MyAppHub, IPay2MyAppAppsell } from "pay2myapp-widgets";
+import { IPay2MyAppHub, IPay2MyAppAppsell } from "pay2my.app";
 
-type OverhideAppsellButtonProps = {
+type Pay2MyAppSellButtonProps = {
   hub?: IPay2MyAppHub | null;
   sku?: string;
   priceDollars?: string;
@@ -16,7 +16,7 @@ type OverhideAppsellButtonProps = {
   onAddError?: (text: string) => void;
 };
 
-const OverhideAppsellButtonComponent: React.FunctionComponent<OverhideAppsellButtonProps>  = (props) => {
+const Pay2MyAppSellButtonComponent: React.FunctionComponent<Pay2MyAppSellButtonProps>  = (props) => {
   const componentRef = useRef();
   const BACKEND_CONNECTION_STRING = `https://demo-back-end.azurewebsites.net/api`;
 
@@ -78,4 +78,4 @@ const OverhideAppsellButtonComponent: React.FunctionComponent<OverhideAppsellBut
   );
 }
 
-export default OverhideAppsellButtonComponent;
+export default Pay2MyAppSellButtonComponent;

@@ -1,12 +1,12 @@
 import React, { useRef, useEffect } from "react";
 
-import { IPay2MyAppHub, IPay2MyAppStatus } from "pay2myapp-widgets";
+import { IPay2MyAppHub, IPay2MyAppStatus } from "pay2my.app";
 
-type OverhideStatusProps = {
+type Pay2MyAppStatusProps = {
   hub?: IPay2MyAppHub | null;
 };
 
-const OverhideStatusComponent: React.FunctionComponent<OverhideStatusProps>  = (props) => {
+const Pay2MyAppStatusComponent: React.FunctionComponent<Pay2MyAppStatusProps>  = (props) => {
   const componentRef = useRef();
 
   useEffect(() => {
@@ -26,4 +26,4 @@ const OverhideStatusComponent: React.FunctionComponent<OverhideStatusProps>  = (
   );
 }
 
-export default OverhideStatusComponent;
+export default Pay2MyAppStatusComponent;

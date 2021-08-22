@@ -1,14 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
 
-import { IPay2MyAppHub } from "pay2myapp-widgets";
+import { IPay2MyAppHub } from "pay2my.app";
 
-type OverhideHubProps = {
+type Pay2MyAppHubProps = {
   isTest: boolean;
   onHubInit?: (hub: IPay2MyAppHub) => void;
   onPendingTransaction?: ( currency: string, isPending: boolean) => void;
 };
 
-const OverhideHubComponent: React.FunctionComponent<OverhideHubProps>  = (props) => {
+const Pay2MyAppHubComponent: React.FunctionComponent<Pay2MyAppHubProps>  = (props) => {
   const hubRef = useRef();
   const BACKEND_CONNECTION_STRING = `https://demo-back-end.azurewebsites.net/api`;
 
@@ -54,4 +54,4 @@ const OverhideHubComponent: React.FunctionComponent<OverhideHubProps>  = (props)
   );
 }
 
-export default OverhideHubComponent;
+export default Pay2MyAppHubComponent;

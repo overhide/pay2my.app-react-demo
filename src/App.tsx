@@ -1,14 +1,14 @@
-import { IPay2MyAppHub } from "pay2myapp-widgets";
+import { IPay2MyAppHub } from "pay2my.app";
 import React, { useState } from "react";
 
 import './App.css';
 import './assets/w3.css'
 
-import OverhideHubComponent from "./components/OverhideHubComponent";
-import OverhideStatusComponent from "./components/OverhideStatusComponent";
-import OverhideLoginComponent from "./components/OverhideLoginComponent";
-import OverhideLoginButtonComponent from "./components/OverhideLoginButtonComponent";
-import OverhideAppsellButtonComponent from "./components/OverhideAppsellButtonComponent";
+import Pay2MyAppHubComponent from "./components/Pay2MyAppHubComponent";
+import Pay2MyAppStatusComponent from "./components/Pay2MyAppStatusComponent";
+import Pay2MyAppLoginComponent from "./components/Pay2MyAppLoginComponent";
+import Pay2MyAppLoginButtonComponent from "./components/Pay2MyAppLoginButtonComponent";
+import Pay2MyAppSellButtonComponent from "./components/Pay2MyAppSellButtonComponent";
 import Messages, {Message} from "./components/Messages";
 
 type AppProps = {
@@ -46,11 +46,11 @@ const App: React.FunctionComponent<AppProps>  = (props) => {
     <div>
       <img className={`visa ${isVisaPending ? 'visible' : 'invisible'}`} id="visa" src={`${process.env.PUBLIC_URL}/visa.png`} alt="" />
 
-      <OverhideHubComponent isTest={true} onHubInit={onHubInit} onPendingTransaction={onPendingTransaction}></OverhideHubComponent>
+      <Pay2MyAppHubComponent isTest={true} onHubInit={onHubInit} onPendingTransaction={onPendingTransaction}></Pay2MyAppHubComponent>
 
       <div className="w3-bar w3-border w3-light-grey">
         <div className="w3-right">
-          <OverhideStatusComponent hub={hub}></OverhideStatusComponent>
+          <Pay2MyAppStatusComponent hub={hub}></Pay2MyAppStatusComponent>
         </div>          
       </div>
 
@@ -60,18 +60,18 @@ const App: React.FunctionComponent<AppProps>  = (props) => {
         <p>In the top-right we see the <em>pay2myapp-status</em> widget &mdash; allows (re)login, transaction check, logout, and payments refresh.</p>
         <p>Just below we see an explicit "login" button (<em>pay2myapp-appsell</em> widget).  This button always allows (re)login and never starts a feature flow.  This button has some custom neopolitan themed color scheme CSS.</p>
         <p>At the bottom we see three feature buttons (<em>pay2myapp-appsell</em> widgets).  These cause initial login and feature flows &mdash; through the backe-end &mdash; at different payment tiers.</p>
-        <p><a href="https://github.com/overhide/pay2myapp-widgets#demos">...back to demos</a></p>    
+        <p><a href="https://github.com/overhide/pay2my.app#demos">...back to demos</a></p>    
       </div></div>
 
-      <OverhideLoginComponent hub={hub}></OverhideLoginComponent>
+      <Pay2MyAppLoginComponent hub={hub}></Pay2MyAppLoginComponent>
 
       <div className="w3-row w3-padding-64"><div className="w3-col s4">&nbsp;</div><div className="w3-col s4 w3-center">
-        <OverhideLoginButtonComponent hub={hub}></OverhideLoginButtonComponent>
+        <Pay2MyAppLoginButtonComponent hub={hub}></Pay2MyAppLoginButtonComponent>
       </div></div>
 
       <div className="w3-row appsell-envelope">
         <div className="w3-col s4 w3-center">
-          <OverhideAppsellButtonComponent 
+          <Pay2MyAppSellButtonComponent 
             hub={hub}
             sku="free-feature"
             priceDollars="0"
@@ -82,10 +82,10 @@ const App: React.FunctionComponent<AppProps>  = (props) => {
             overhideAddress="0x046c88317b23dc57F6945Bf4140140f73c8FC80F"
             onAddMessage={addMessage}
             onAddError={addError}>
-          </OverhideAppsellButtonComponent>
+          </Pay2MyAppSellButtonComponent>
         </div>
         <div className="w3-col s4 w3-center">
-          <OverhideAppsellButtonComponent 
+          <Pay2MyAppSellButtonComponent 
             hub={hub}
             sku="paid-feature"
             priceDollars="2"
@@ -96,10 +96,10 @@ const App: React.FunctionComponent<AppProps>  = (props) => {
             overhideAddress="0x046c88317b23dc57F6945Bf4140140f73c8FC80F"
             onAddMessage={addMessage}
             onAddError={addError}>
-          </OverhideAppsellButtonComponent>
+          </Pay2MyAppSellButtonComponent>
         </div>
         <div className="w3-col s4 w3-center">
-          <OverhideAppsellButtonComponent 
+          <Pay2MyAppSellButtonComponent 
             hub={hub}
             sku="subscribed-feature"
             priceDollars="3"
@@ -111,7 +111,7 @@ const App: React.FunctionComponent<AppProps>  = (props) => {
             withinMinutes="30"
             onAddMessage={addMessage}
             onAddError={addError}>
-          </OverhideAppsellButtonComponent>
+          </Pay2MyAppSellButtonComponent>
         </div>
       </div>
 

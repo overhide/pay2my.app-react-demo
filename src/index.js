@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { OverhideHub, OverhideStatus, OverhideLogin, OverhideAppsell } from "pay2myapp-widgets";
+import { Pay2MyAppHub, Pay2MyAppStatus, Pay2MyAppLogin, Pay2MyAppSell } from "pay2my.app";
 
-OverhideHub;
-OverhideStatus;
-OverhideLogin
-OverhideAppsell;
+Pay2MyAppHub;
+Pay2MyAppStatus;
+Pay2MyAppLogin
+Pay2MyAppSell;
 
 ReactDOM.render(
   <React.StrictMode>

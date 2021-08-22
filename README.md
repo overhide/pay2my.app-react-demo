@@ -1,4 +1,4 @@
-<p align="center"><a href="https://overhide.io"><img src="https://overhide.github.io/pay2myapp-widgets/assets/logo.png" width="200px"/></a></p>
+<p align="center"><a href="https://overhide.io"><img src="https://overhide.github.io/pay2my.app/assets/logo.png" width="200px"/></a></p>
 
 <p align="center"><a href="https://overhide.io">pay2my.app by overhide.io</a></p><p style="width: 500px; margin: auto">A free and open-sourced (mostly) ecosystem of widgets, a front-end library, and back-end services &mdash; to make addition of "logins" and "in-app-purchases" (IAP) to your app as banal as possible.</p>
 
@@ -10,9 +10,9 @@
 
 
 
-This is [a demo](https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/index.html) of using [pay2myapp-widgets](https://github.com/overhide/pay2myapp-widgets) with  [React.js](https://reactjs.org/).
+This is [a demo](https://overhide.github.io/pay2my.app-react-demo/build/index.html) of using [pay2my.app](https://github.com/overhide/pay2my.app) with  [React.js](https://reactjs.org/).
 
-The [live demo](https://overhide.github.io/pay2myapp-widgets-react-demo-app/build/index.html) &mdash; which uses a demo back-end hosted as an Azure function (as per  [pay2myapp-widgets](https://github.com/overhide/pay2myapp-widgets) demo code) &mdash; is described in the [About](#about) section below.
+The [live demo](https://overhide.github.io/pay2my.app-react-demo/build/index.html) &mdash; which uses a demo back-end hosted as an Azure function (as per  [pay2my.app](https://github.com/overhide/pay2my.app) demo code) &mdash; is described in the [About](#about) section below.
 
 
 
@@ -25,18 +25,18 @@ This demo was created using the following steps:
 Created the React application and go into the new subfolder.
 
 ````
-npx create-react-app pay2myapp-widgets-react-demo-app -–template typescript
-cd pay2myapp-widgets-react-demo-app
+npx create-react-app pay2my.app-react-demo -–template typescript
+cd pay2my.app-react-demo
 ````
 
 
 
 NPM install all the dependencies, types.
 
-Note the `pay2myapp-widgets`&mdash; they're being braught in as a dependancy.
+Note the `pay2my.app`&mdash; they're being braught in as a dependancy.
 
 ```
-npm install --save typescript @types/node @types/react @types/react-dom @types/jest pay2myapp-widgets
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest pay2my.app
 ```
 
 
@@ -59,45 +59,45 @@ Note the `no-unused-expressions` is added.
 
 
 
-Bring in [pay2myapp-widgets](https://github.com/overhide/pay2myapp-widgets) Web components into the application.  Modify [src/index.js](src/index.js).
+Bring in [pay2my.app](https://github.com/overhide/pay2my.app) Web components into the application.  Modify [src/index.js](src/index.js).
 
 ```
-import { OverhideHub, OverhideStatus, OverhideLogin, OverhideAppsell } from "pay2myapp-widgets";
+import { Pay2MyAppHub, Pay2MyAppStatus, Pay2MyAppLogin, Pay2MyAppSell } from "pay2my.app";
 
-OverhideHub;
-OverhideStatus;
-OverhideLogin
-OverhideAppsell;
+Pay2MyAppHub;
+Pay2MyAppStatus;
+Pay2MyAppLogin
+Pay2MyAppSell;
 ```
 
 
 
-Added React components to wrap [pay2myapp-widgets](https://github.com/overhide/pay2myapp-widgets) Web components:
+Added React components to wrap [pay2my.app](https://github.com/overhide/pay2my.app) Web components:
 
-- [src/components/OverhideHubComponent.tsx](src/components/OverhideHubComponent.tsx)
+- [src/components/Pay2MyAppHubComponent.tsx](src/components/Pay2MyAppHubComponent.tsx)
 
   - wraps `pay2myapp-hub`
 
-- [src/components/OverhideAppsellButtonComponent.tsx](src/components/OverhideAppsellButtonComponent.tsx)
+- [src/components/Pay2MyAppSellButtonComponent.tsx](src/components/Pay2MyAppSellButtonComponent.tsx)
 
   - wraps `pay2myapp-appsell`
 
-- [src/components/OverhideLoginButtonComponent.tsx](src/components/OverhideLoginButtonComponent.tsx)
+- [src/components/Pay2MyAppLoginButtonComponent.tsx](src/components/Pay2MyAppLoginButtonComponent.tsx)
 
   - wraps `pay2myapp-appsell` as a login-only button
-  - also added custom styles fro demo purposes [src/components/OverhideHubComponent.css](src/components/OverhideHubComponent.css)
+  - also added custom styles fro demo purposes [src/components/Pay2MyAppHubComponent.css](src/components/Pay2MyAppHubComponent.css)
 
-- [src/components/OverhideLoginComponent.tsx](src/components/OverhideLoginComponent.tsx)
+- [src/components/Pay2MyAppLoginComponent.tsx](src/components/Pay2MyAppLoginComponent.tsx)
 
   - wraps `pay2myapp-login`
 
-- [src/components/OverhideStatusComponent.tsx](src/components/OverhideStatusComponent.tsx)
+- [src/components/Pay2MyAppStatusComponent.tsx](src/components/Pay2MyAppStatusComponent.tsx)
 
   - wraps `pay2myapp-status`
 
   
 
-Rename `/src/App.js` to [/src/App.tsx](/src/App.tsx) and modify it for  [pay2myapp-widgets](https://github.com/overhide/pay2myapp-widgets) demo code specifics:
+Rename `/src/App.js` to [/src/App.tsx](/src/App.tsx) and modify it for  [pay2my.app](https://github.com/overhide/pay2my.app) demo code specifics:
 
 - hub
 - nav
@@ -109,7 +109,7 @@ Rename `/src/App.js` to [/src/App.tsx](/src/App.tsx) and modify it for  [pay2mya
 
 
 
-The components use a demo back-end hosted as an Azure function as per  [pay2myapp-widgets](https://github.com/overhide/pay2myapp-widgets) demo code, read about it there.
+The components use a demo back-end hosted as an Azure function as per  [pay2my.app](https://github.com/overhide/pay2my.app) demo code, read about it there.
 
 
 

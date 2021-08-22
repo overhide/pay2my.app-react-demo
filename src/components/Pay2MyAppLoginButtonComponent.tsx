@@ -1,14 +1,14 @@
 import React, { useRef, useEffect } from "react";
 
-import './OverhideLoginButtonComponent.css';
+import './Pay2MyAppLoginButtonComponent.css';
 
-import { IPay2MyAppHub, IPay2MyAppAppsell } from "pay2myapp-widgets";
+import { IPay2MyAppHub, IPay2MyAppAppsell } from "pay2my.app";
 
-type OverhideLoginButtonProps = {
+type Pay2MyAppLoginButtonProps = {
   hub?: IPay2MyAppHub | null;
 };
 
-const OverhideLoginButtonComponent: React.FunctionComponent<OverhideLoginButtonProps>  = (props) => {
+const Pay2MyAppLoginButtonComponent: React.FunctionComponent<Pay2MyAppLoginButtonProps>  = (props) => {
   const componentRef = useRef();
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const OverhideLoginButtonComponent: React.FunctionComponent<OverhideLoginButtonP
   );
 }
 
-export default OverhideLoginButtonComponent;
+export default Pay2MyAppLoginButtonComponent;

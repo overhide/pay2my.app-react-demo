@@ -16,7 +16,7 @@
     "react-scripts": "4.0.3",
     "typescript": "^4.3.4",
     "web-vitals": "^1.1.2",
-    "pay2myapp-widgets": "1.0.18"
+    "pay2my.app": "1.0.23"
   },
   "scripts": {
     "start": "react-scripts --max_old_space_size=4096 start",
