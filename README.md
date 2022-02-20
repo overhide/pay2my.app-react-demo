@@ -14,7 +14,7 @@ This is [a demo](https://overhide.github.io/pay2my.app-react-demo/build/index.ht
 
 The [live demo](https://overhide.github.io/pay2my.app-react-demo/build/index.html) &mdash; which uses a demo back-end hosted as an Azure function (as per  [pay2my.app](https://github.com/overhide/pay2my.app) demo code) &mdash; is described in the [About](#about) section below.
 
-
+> For help, reach out on [r/overhide](https://www.reddit.com/r/overhide/).
 
 # About
 
