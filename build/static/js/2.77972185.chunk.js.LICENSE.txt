@@ -18,6 +18,13 @@ object-assign
          */
 
 /*!
+         * The buffer module from node.js, for the browser.
+         *
+         * @author   Feross Aboukhadijeh <http://feross.org>
+         * @license  MIT
+         */
+
+/*!
        * v2.1.4-104-gc868b3a
        * 
        */
