@@ -5,17 +5,17 @@
     "main.js.map": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/main.b11911f9.chunk.js.map",
     "runtime-main.js": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/runtime-main.666f0376.js",
     "runtime-main.js.map": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/runtime-main.666f0376.js.map",
-    "static/js/2.1d855409.chunk.js": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/2.1d855409.chunk.js",
-    "static/js/2.1d855409.chunk.js.map": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/2.1d855409.chunk.js.map",
+    "static/js/2.517828f9.chunk.js": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/2.517828f9.chunk.js",
+    "static/js/2.517828f9.chunk.js.map": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/2.517828f9.chunk.js.map",
     "static/js/3.96982945.chunk.js": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/3.96982945.chunk.js",
     "static/js/3.96982945.chunk.js.map": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/3.96982945.chunk.js.map",
     "index.html": "https://overhide.github.io/pay2my.app-react-demo/build/index.html",
     "static/css/main.47a5959b.chunk.css.map": "https://overhide.github.io/pay2my.app-react-demo/build/static/css/main.47a5959b.chunk.css.map",
-    "static/js/2.1d855409.chunk.js.LICENSE.txt": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/2.1d855409.chunk.js.LICENSE.txt"
+    "static/js/2.517828f9.chunk.js.LICENSE.txt": "https://overhide.github.io/pay2my.app-react-demo/build/static/js/2.517828f9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.666f0376.js",
-    "static/js/2.1d855409.chunk.js",
+    "static/js/2.517828f9.chunk.js",
     "static/css/main.47a5959b.chunk.css",
     "static/js/main.b11911f9.chunk.js"
   ]
