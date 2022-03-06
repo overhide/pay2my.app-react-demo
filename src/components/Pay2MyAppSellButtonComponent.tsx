@@ -29,8 +29,13 @@ const Pay2MyAppSellButtonComponent: React.FunctionComponent<Pay2MyAppSellButtonP
       +`&currency=${event.detail.currency}`
       +`&from=${event.detail.from}`
       +`&isTest=${event.detail.isTest}`
-      +`&message=${btoa(event.detail.message)}`
-      +`&signature=${btoa(event.detail.signature)}`)
+      +`&message=${btoa(event.detail.asOf)}`,
+      { 
+        headers: { 
+          // note `e.detail.message` is the overhide api `token` retrieved by the library
+          // note `e.detail.signature` is the signature of the above `token`, signed with the `from` address (user address)
+          "Authorization": `Bearer ${btoa(event.detail.message)}:${btoa(event.detail.signature)}`
+      }})
       .then(response => {
         if (response.ok) {
           props.onAddMessage && props.onAddMessage(event.detail.sku);
